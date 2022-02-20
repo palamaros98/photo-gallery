@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<div class="photo-board-block">
+  <div class="photo-board-box">
+    <div class="photo-box"
+         *ngFor="let photo of photos"
+         [ngStyle]="{'transform': 'rotate(' + photo.transform + 'deg)'}"
+         cdkDragBoundary=".photo-board-box"
+         [cdkDragFreeDragPosition]="photo.position"
+         cdkDrag
+    >
+      <img [src]="photo.path" [alt]="photo.name">
+    </div>
+  </div>
+</div>

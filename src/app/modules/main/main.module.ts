@@ -10,6 +10,7 @@ import {SliderComponent} from "./dashboard/slider/slider.component";
 import {DashGalleryComponent} from "./dashboard/dash-gallery/dash-gallery.component";
 import {PhotoBoardComponent} from "./dashboard/photo-board/photo-board.component";
 import {PhotoLineComponent} from "./dashboard/slider/photo-line/photo-line.component";
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import {PhotoLineComponent} from "./dashboard/slider/photo-line/photo-line.compo
   ],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    DragDropModule
   ]
 })
 export class MainModule {
